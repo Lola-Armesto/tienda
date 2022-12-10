@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La tienda de Lola</title>
+    <link rel="icon" href="../Imagenes/icono.png" type="image" sizes="16x16">
+</head>
+<body>
+    <img src="../Imagenes/formularios.jpeg" />
+    <section>
+        <h2>Sigue estos pasos para realizar tu compra</h2>
+        <ol>
+            <li>Registrarte en la web o acceder directamente si ya estas registrado/a</li>
+            <li>Selecciona tu producto</li>
+            <li>Confirma que los datos de envio y facturacion son correctos</li>
+            <li>Accede a l plataforma de pago seguro para abonar el importe de tu compra</li>
+            <li>Una vez realizada la compra, recibiras un justificante de la misma <strong>¡¡¡CONSERVALO BIEN!!!</strong></li>
+        </ol>
+    </section>
+    <section>
+        <h2>Quiero registrarme</h2>
+        <fieldset>
+            <legend>Formulario de registro</legend>
+    <form id="registro" action="registro.php" method="get">
+        <label for="user">Nombre <input id="user" type="text" name="nombre" placeholder="Tu nombre" required>
+        <label for="surname">Apellidos </label><input id="surname" type="text" name="apellidos" size="50" placeholder="Tus apellidos" required ><br/>
+        <label for="dir">Dirección </label><input id="dir" type="text" name="direccion" size="100" placeholder="Tu direccion" required><br/>
+        <label for="prov">Provincia</label><input id="prov" type="text" name="provincia" placeholder="Tu provincia" required>
+        <label for="loc">Selecciona localidad </label>
+        <select id="loc" name="localidad" required> 
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select><br/>
+        <label for="postal">Codigo Postal</label><input id="postal" type="number" name="cp" placeholder="Tu codigo postal" required><br/>
+        <label for="mail">Email </label><input id="mail" type="email" name="email" placeholder="Tu email" required><br/>
+        <label for="phone">Telefono</label><input id="phone" type="tel" name="telefono" placeholder="Tu movil" required><br/><br/>
+        <label for="avatar">Nombre Usuario</label><input id="avatar" type="text" name="alias" placeholder="Tu nombre de usuario" required><br/>
+        <label for="pwd">Contraseña</label><input id="pwd" type="password" name="pass1" placeholder="Tu contraseña" min="8" required><br/>
+        <label for="pwd">Repite contraseña</label><input id="pwd" type="password" name="pass2" placeholder="Repite tu contraseña" min="8" required><br/><br/>
+                        <input type="submit" value="Registrase">
+                        <input type="reset"  value="Borrar Datos"><br/>
+    </form>
+</fieldset>
+    </section>
+   
+    
+    <section>
+        
+        <h2> Ya tengo credenciales</h2>
+        <fieldset>
+            <legend>Formulario de Acceso</legend>
+        <form id="login" action="login.php" method="get">
+           <label for="user"> Nombre usuario: </label><br/><input type="text" name="alias" id="user" required><br/>
+           <label for="contraseña">  Contraseña: </label><br/><input type="password" name="pass" id="contraseña" min="8" required><br/>
+            
+                            <button type="submit">Acceder</button><br/>
+            <a href="renovar_pass.php">¿Contraseña olvidada?</a>                
+
+        </form>
+    </fieldset>
+        </section>
+        <h4><a href="../index.html">Volver a pagina principal</a></h4>
+</body>
+</html>
